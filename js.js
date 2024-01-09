@@ -1,4 +1,4 @@
-let score = parseInt(localStorage.getItem("savedscore"));
+let score = parseInt(localStorage.getItem('savedscore')) || 0;
 let passive = 0;
 let modifier = 1;
 let pcprice = 20;
