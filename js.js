@@ -1,12 +1,14 @@
-let score = 0;
+let score = parseInt(localStorage.getItem("savedscore"));
 let passive = 0;
 let modifier = 1;
 let pcprice = 20;
 let bcprice = 10;
+document.getElementById('score').innerHTML = score;
 
 function cookieclicked() {
     score += modifier;
     document.getElementById('score').innerHTML = score;
+    localStorage.setItem("savedscore", score);
 }
 
 function bcc() {
